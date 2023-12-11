@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form action="/app/v1/tasks" method="post" id="home">
+      <h2>Create Task</h2>
+      <input type="text" name="task" id="task" placeholder="enter task" />
+      <button type="submit">Create</button>
+    </form>
+    <div class="list">
+      <h3>List of Tasks</h3>
+      <table>
+        <!--heading-->
+        <tr>
+          <th>Task name</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+        <!--body-->
+        <% tasks.forEach((doc)=>{%>
+        <tr>
+          <td><%= doc.task%></td>
+          <td><a href="/app/v1/tasks/<%=doc._id%>">Update</a></td>
+          <td><form action="/app/v1/tasks/<%=doc._id%>?_method=DELETE" method="post" id="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </td>
+        </tr>
+        <%})%>
+      </table>
+    </div>
+  </body>
+</html>

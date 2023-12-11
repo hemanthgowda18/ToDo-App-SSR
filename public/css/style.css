@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #3397da;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+form#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    height: 30vh;
+    margin: 10vh auto 0 auto;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+form#home h2{
+    margin-bottom: 3px;
+}
+form#home input{
+    padding: 10px;
+    border: #ddd;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+form#home button{
+    background-color:#8BC6EC ;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+form#home input:focus{
+    border: 2px solid #ddd;
+}
+form#update{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    height: 30vh;
+    margin: 10vh auto 0 auto;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+form#update h2{
+    margin-bottom: 3px;
+}
+form#update input{
+    padding: 10px;
+    border: #ddd;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+form#update button{
+    background-color:#8BC6EC ;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+form#update input:focus{
+    border: 2px solid #ddd;
+}
+.list{
+    /* margin-top: 20px; */
+    margin: 20px auto 0 auto;
+    max-width: 500px;
+    background-color: white;
+}
+.list table{
+    width: 100%;
+}
+.list h3{
+    text-align: center;
+}
+table tr td{
+    text-align: center;
+}
+.list table tr{
+    height: 30px;
+}
+
+table tr:nth-child(even):hover{
+    background-color: #ddd;
+}
+table tr td a{
+    text-decoration: none;
+    background-color: goldenrod;
+    color: whitesmoke;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+form#delete button{
+    background-color:#d92b2b;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+}

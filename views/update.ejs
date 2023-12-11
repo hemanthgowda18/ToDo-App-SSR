@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form action="/app/v1/tasks/<%=task._id%>?_method=PUT" method="post" id="update">
+      <h2>Update Task</h2>
+      <input type="text" name="task" id="task" value="<%=task.task%>" />
+      <button type="submit">Update</button>
+    </form>
+    <div class="list">
+      <h3>List of Tasks</h3>
+      <table>
+        <!--heading-->
+        <tr>
+          <th>Task name</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+        <!--body-->
+        <tr>
+          <td>Something</td>
+          <td>update</td>
+          <td>delete</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
